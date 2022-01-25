@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+
+  "name": "Enable Spellcheck",
+  "description": "Force enable spellcheck on a page or iframe",
+  "version": "1.0",
+
+  "icons": { "16": "enable-spellcheck_16.png",
+           "48": "enable-spellcheck_48.png",
+          "128": "enable-spellcheck_128.png" },
+  "permissions": [
+    "contextMenus",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*",
+    "file:///*test.html"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
